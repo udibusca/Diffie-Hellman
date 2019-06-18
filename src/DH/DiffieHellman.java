@@ -94,8 +94,8 @@ public class DiffieHellman {
 		System.out.println("Alice secret: " + toHexString(aliceSharedSecret));
 		System.out.println("Bob secret: " + toHexString(bobSharedSecret));
 		if (!java.util.Arrays.equals(aliceSharedSecret, bobSharedSecret))
-			throw new Exception("Shared secrets differ");
-		System.out.println("Shared secrets are the same");
+			throw new Exception("Segredos compartilhados diferem");
+		System.out.println("Segredos compartilhados são os mesmos");
 
 		/**
 		* Agora vamos criar um objeto SecretKey usando o segredo compartilhado e usá-lo para
